@@ -84,7 +84,7 @@
         <!--Compose View Controller-->
         <scene sceneID="EfT-kd-Axw">
             <objects>
-                <viewController storyboardIdentifier="ComposeViewController" id="4h2-vc-7Ui" customClass="ComposeViewController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ComposeViewController" modalPresentationStyle="overCurrentContext" id="4h2-vc-7Ui" customClass="ComposeViewController" customModule="Tumblr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="hex-Bl-0uW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
