@@ -20,6 +20,14 @@ class TabBarViewController: UIViewController {
     var AccountViewController: UIViewController!
     var TrendingViewController: UIViewController!
     
+    
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var composeButton: UIButton!
+    @IBOutlet weak var accountButton: UIButton!
+    @IBOutlet weak var trendingButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +50,13 @@ class TabBarViewController: UIViewController {
        
         HomeViewController.view.frame = contentView.bounds
         contentView.addSubview(HomeViewController.view)
+    
+        homeButton.selected = !trendingButton.selected
+        accountButton.selected = false
+        searchButton.selected = false
+        trendingButton.selected = false
+        
+        
     }
     
     
@@ -50,18 +65,41 @@ class TabBarViewController: UIViewController {
         
         SearchViewController.view.frame = contentView.bounds
         contentView.addSubview(SearchViewController.view)
+    
+        searchButton.selected = !trendingButton.selected
+        homeButton.selected = false
+        accountButton.selected = false
+        trendingButton.selected = false
+        
+    
+    
     }
     
     @IBAction func didTapAccountButton(sender: AnyObject) {
         
         AccountViewController.view.frame = contentView.bounds
         contentView.addSubview(AccountViewController.view)
+    
+        accountButton.selected = !trendingButton.selected
+        homeButton.selected = false
+        searchButton.selected = false
+        trendingButton.selected = false
+        
+    
     }
     
     @IBAction func didTapTrendingButton(sender: AnyObject) {
         
         TrendingViewController.view.frame = contentView.bounds
         contentView.addSubview(TrendingViewController.view)
+        
+        
+        trendingButton.selected = !trendingButton.selected
+        homeButton.selected = false
+        searchButton.selected = false
+        accountButton.selected = false
+        
+        
     }
     
     

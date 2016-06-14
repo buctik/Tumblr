@@ -250,15 +250,6 @@
                                             <segue destination="4h2-vc-7Ui" kind="modal" id="ny0-37-jtD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5bi-jQ-ME1">
-                                        <rect key="frame" x="268" y="25" width="35" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="trending_icon"/>
-                                        <state key="selected" image="trending_selected_icon"/>
-                                        <connections>
-                                            <action selector="didTapTrendingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xu6-zV-R6k"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6o7-nK-0Me">
                                         <rect key="frame" x="210" y="25.5" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -266,6 +257,15 @@
                                         <state key="selected" image="account_selected_icon"/>
                                         <connections>
                                             <action selector="didTapAccountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6A-9p-cvC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5bi-jQ-ME1">
+                                        <rect key="frame" x="268" y="25.5" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="trending_icon"/>
+                                        <state key="selected" image="trending_selected_icon"/>
+                                        <connections>
+                                            <action selector="didTapTrendingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xu6-zV-R6k"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -286,7 +286,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="accountButton" destination="6o7-nK-0Me" id="maq-iX-mwO"/>
+                        <outlet property="composeButton" destination="8rd-SE-bIh" id="ng5-sE-zha"/>
                         <outlet property="contentView" destination="Psf-2t-L79" id="zxf-Gx-i9M"/>
+                        <outlet property="homeButton" destination="qdP-cB-HHQ" id="60m-8Z-dF8"/>
+                        <outlet property="searchButton" destination="U3K-95-WNU" id="ejs-5h-5Io"/>
+                        <outlet property="trendingButton" destination="5bi-jQ-ME1" id="PJr-n8-Qg2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
