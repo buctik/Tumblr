@@ -92,27 +92,27 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hdK-nC-Q4Q">
                                 <rect key="frame" x="28" y="136" width="75" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="text_icon"/>
+                                <state key="normal" title="text" image="text_icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VVq-vz-6TC">
                                 <rect key="frame" x="123" y="136" width="75" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="photo_icon"/>
+                                <state key="normal" title="photo" image="photo_icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MWk-K4-Id2">
-                                <rect key="frame" x="217" y="251" width="75" height="95"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nJu-qM-OGp">
+                                <rect key="frame" x="217" y="136" width="75" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="video_icon"/>
+                                <state key="normal" title="quote" image="quote_icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mre-me-k5I">
                                 <rect key="frame" x="28" y="247" width="75" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="link_icon"/>
+                                <state key="normal" title="link" image="link_icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sdj-vV-fBF">
-                                <rect key="frame" x="123" y="250" width="75" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MWk-K4-Id2">
+                                <rect key="frame" x="217" y="251" width="75" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="chat_icon"/>
+                                <state key="normal" title="video" image="video_icon"/>
                             </button>
                             <view contentMode="scaleToFill" id="EhD-rS-HA1">
                                 <rect key="frame" x="-1" y="516" width="320" height="53"/>
@@ -129,14 +129,22 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nJu-qM-OGp">
-                                <rect key="frame" x="217" y="136" width="75" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sdj-vV-fBF">
+                                <rect key="frame" x="123" y="250" width="75" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="quote_icon"/>
+                                <state key="normal" title="chat" image="chat_icon"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.18431372549019609" green="0.27058823529411763" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="chatButton" destination="sdj-vV-fBF" id="XxI-P0-8zl"/>
+                        <outlet property="linkButton" destination="Mre-me-k5I" id="mtn-Km-oau"/>
+                        <outlet property="photoButton" destination="VVq-vz-6TC" id="ll2-uC-ChP"/>
+                        <outlet property="quoteButton" destination="nJu-qM-OGp" id="O9d-1s-2Bb"/>
+                        <outlet property="textButton" destination="hdK-nC-Q4Q" id="5ps-Y7-q1k"/>
+                        <outlet property="videoButton" destination="MWk-K4-Id2" id="zpQ-tS-cea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjr-hQ-vFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="awi-HI-jku">
